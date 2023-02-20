@@ -1,0 +1,217 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+html, body {
+  height: 100%;
+  
+}
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.header, .content, .footer {
+  /*color: white;*/
+  font-size: 20px;
+  text-align: center;
+}
+.header {
+  padding: 9px;
+  display: flex;
+  max-width: 100%;
+  background-color: #d96363;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  padding-bottom: 7px;
+  display: flex;
+  align-items: center;
+}
+h2 {
+  font-size: 40px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: white;
+}
+.nav-link {
+  font-size: 23px;
+  background-color: white;
+  opacity: 0.5;
+  padding: 5px;
+  margin-right: 15px;
+  border-radius: 5px;
+}
+.nav-link:hover {
+  color: #6d1212;
+}
+
+/* CONTENT */
+.content {
+  background-color: #F1FAFF;
+  flex: 1 1 auto;
+}
+
+/* styles cards */
+.conteiner_one {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+}
+.conteiner_cards {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  width: 300px;
+  margin: 10px;
+  transition: all 300ms;
+}
+.card:hover {
+  width: 350px;
+}
+
+.card .cover {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+}
+.card .cover img {
+  width: 250px;
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 40px;
+  z-index: 1;
+  filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5));
+  transition: all 400ms;
+}
+.card:hover .cover img {
+  top: 0;
+}
+
+.card .img_back {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  background-size: cover;
+  border-radius: 20px;
+  transition: all 300ms;
+}
+.card:nth-of-type(1) .img_back {
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/001/953/797/small/colourful-abstract-flat-fluid-background-free-vector.jpg");
+}
+.card:nth-of-type(2) .img_back {
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/001/372/954/small/abstract-colorful-flat-geometric-background-free-vector.jpg");
+}
+.card:nth-of-type(3) .img_back {
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/001/437/080/small/geometric-abstract-with-memphis-style-background-free-vector.jpg");
+}
+.card:nth-of-type(4) .img_back {
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/002/380/063/small/abstract-geometric-flat-design-background-free-vector.jpg");
+}
+.card:nth-of-type(5) .img_back {
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/002/821/966/small_2x/abstract-triangular-geometric-background-free-vector.jpg");
+}
+.card:hover .img_back {
+  bottom: -40px;
+}
+
+.card .description {
+  background: white;
+  margin-top: -10px;
+  padding: 20px;
+  border-radius: 0 0 20px 20px;
+  transition: all 300ms;
+}
+.card:hover .description {
+  padding: 40px;
+}
+
+.card .description h2 {
+  margin-top: 10px;
+}
+.card .description p {
+  margin-top: 10px;
+}
+.card .description input {
+  padding: 10px 40px;
+  margin-top: 20px;
+  border: none;
+  background: #ee96a4;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 300ms;
+}
+.card .description input:hover {
+  background: #f07f92;
+}
+
+/* button to go top */
+.buttonup {
+  width: 60px;
+  height: 60px;
+  background: #46a2fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+  border: 4px solid transparent;
+  transition: all 300ms ease;
+}
+.buttonup:hover {
+  opacity: 0.75;
+  transform: scale(1.1);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+.hide {
+  opacity: 0;
+}
+/*class button*/
+.active {
+  opacity: 1;
+}
+
+/* FOOTER */
+.footer {
+  font-size: 15px;
+  padding: 9px;
+  background-color: #d96363;
+}
+.footer-logo, .footer-enlaces, .footer-copy {
+  padding: 5px;
+}
+.nav-link-foo {
+  padding: 6px;
+}
+.footer-copy {
+  color: black;
+}
+@media (max-widht: 800px){
+  .logo, .links{
+    flex: 100%;
+  }
+}
