@@ -1,0 +1,108 @@
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 75.5%;
+}
+
+body{
+  justify-content: space-between;
+  padding: 150px;
+}
+
+.card{
+  font-family: "Nunito";
+  border: 18px;
+  background-color: #f1faff;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: -1rem;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.thumb{
+  width: 100%;
+}
+
+.card-image {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.card-image img {
+  width: 25rem;
+  height: auto;
+  object-fit: cover;
+  backface-visibility: hidden;
+  margin-bottom: 2rem;
+  max-width: 100%;
+  border-top-left-radius: 35px;
+}
+
+.card-body{
+  grid-area: text;
+  margin: 25;
+}
+
+.card-body p{
+  color: rgb(187, 191, 238);
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.card-body h2{
+  margin-top: 10px;
+}
+
+.card-body h2 i {
+  font-size: 2rem;
+  margin: 4px;
+}
+
+.date {
+  font-weight: 900;
+}
+
+
+.flex {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-child {
+  width: 320px;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+}
+
+.card-footer{
+  grid-area: stats;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color:rgb(190, 241, 190);
+}
+
+.card-footer .item{
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  color: darkseagreen;
+}
+
+.item:hover{
+  background-color:bisque;
+  cursor: pointer;
+}
