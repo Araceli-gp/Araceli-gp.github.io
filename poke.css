@@ -15,7 +15,7 @@
   padding: 9px;
   display: flex;
   max-width: 100%;
-  background-color: #89ff57;
+  background-color: #ee9bbc;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
@@ -51,7 +51,7 @@ a:hover {
 .buttonup {
   width: 60px;
   height: 60px;
-  background:  #61cc33;
+  background:  #e4729f;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,7 +73,7 @@ a:hover {
 .hide {
   opacity: 0;
 }
-/*class button*/
+/class button/
 .active {
   opacity: 1;
 }
@@ -84,7 +84,7 @@ a:hover {
 .footer {
   font-size: 15px;
   padding: 9px;
-  background-color: #89ff57;
+  background-color: #ee9bbc;
 }
 .footer-logo, .footer-enlaces, .footer-copy {
   padding: 5px;
@@ -127,7 +127,8 @@ body{
   flex-direction: column;
   margin-top: 20px;
   font-family: 'Orbitron', sans-serif;
-  color: plum;
+  color: rgba(26, 253, 196, 0.993);
+  background-color: #faf7fa41;
 }
 
 .score{
@@ -206,4 +207,3 @@ img{
     }
 
 }
-
