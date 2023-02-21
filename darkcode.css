@@ -21,7 +21,7 @@ html, body {
   padding: 9px;
   display: flex;
   max-width: 100%;
-  background-color: #d96363;
+  background-color: #ffa8b7;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
@@ -58,6 +58,19 @@ a:hover {
   background-color: #F1FAFF;
   flex: 1 1 auto;
 }
+/*Title */
+.title_dark {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+.title {
+  font-size: 6rem;
+  color: #fe7188;
+}
+
 
 /* styles cards */
 .conteiner_one {
@@ -168,7 +181,7 @@ a:hover {
 .buttonup {
   width: 60px;
   height: 60px;
-  background: #46a2fd;
+  background: #f74b67;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -199,7 +212,7 @@ a:hover {
 .footer {
   font-size: 15px;
   padding: 9px;
-  background-color: #d96363;
+  background-color: #ffa8b7;
 }
 .footer-logo, .footer-enlaces, .footer-copy {
   padding: 5px;
